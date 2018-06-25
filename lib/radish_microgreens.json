@@ -1,0 +1,36 @@
+{
+  "id": "radish_microgreens",
+  "name": "Radish Microgreens",
+  "phases": [
+    {
+      "name": "sprouting",
+      "cycles": 2,
+      "dayparts": {
+        "night": {
+          "duration": "PT24H",
+          "variables": {
+            "light_intensity": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "growing",
+      "cycles": 5,
+      "dayparts": {
+        "day": {
+          "duration": "PT18H",
+          "variables": {
+            "light_intensity": 1
+          }
+        },
+        "night": {
+          "duration": "PT6H",
+          "variables": {
+            "light_intensity": 0
+          }
+        }
+      }
+    }
+  ]
+}
